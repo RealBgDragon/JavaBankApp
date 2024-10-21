@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.bankapp.BankController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label fx:id="loginLabel" text="Enter Login information">
+        <font>
+            <Font name="System Bold" size="24.0" />
+        </font>
+        <VBox.margin>
+            <Insets bottom="20"/>
+        </VBox.margin>
+    </Label>
+    <Label fx:id="emailLabel" text="Enter Email"/>
+    <TextField fx:id="emailInput" text="Email..."/>
+    <Label fx:id="passwordLabel" text="Enter Password"/>
+    <PasswordField fx:id="passwordInput"/>
+
+    <Button text="Login" onAction="#onLoginButtonClick"/>
+
+    <Hyperlink text="Don't have an account? Create here" onAction="#openCreateAccountWindow"/>
+
+</VBox>
